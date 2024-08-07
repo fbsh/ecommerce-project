@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="login-link"><a href="login.html">Login</a></li>
+                <li id="register-link"><a href="register.html">Sign Up</a></li>
+                <li id="logout-link" style="display: none;"><a href="#" id="logout-button">Logout</a></li>
+                <li id="admin-link" style="display: none;"><a href="admin.html">Admin</a></li>
+                <li id="user-info" style="display: none;">Welcome, <span id="username"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="product-details"></div>
+        <button id="favorite-button">Add to Favorites</button>
+        <h2>Related Products</h2>
+        <div id="related-products"></div>
+    </main>
+
+    <script type="module" src="js/product-details.js"></script>
+</body>
+</html>

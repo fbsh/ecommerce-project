@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="login-link"><a href="login.html">Login</a></li>
+                <li id="register-link"><a href="register.html">Sign Up</a></li>
+                <li id="logout-link" style="display: none;"><a href="#" id="logout-button">Logout</a></li>
+                <li id="admin-link" style="display: none;"><a href="admin.html">Admin</a></li>
+                <li id="user-info" style="display: none;">Welcome, <span id="username"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filter-panel">
+            <h2>Filter Products</h2>
+            <form id="filter-form">
+                <div>
+                    <h3>Brands</h3>
+                    <div id="brand-filters"></div>
+                </div>
+                <div>
+                    <h3>Categories</h3>
+                    <div id="category-filters"></div>
+                </div>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+
+        <section id="product-gallery">
+            <div id="products-container"></div>
+            <div id="pagination"></div>
+        </section>
+
+        <aside id="favorites-sidebar">
+            <h2>Favorites</h2>
+            <ul id="favorites-list"></ul>
+        </aside>
+    </main>
+    
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>
