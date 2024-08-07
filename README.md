@@ -1,4 +1,4 @@
-# E-commerce Project Progress Summary
+# E-commerce Project
 
 ## Project Overview
 The goal was to build a simplified e-commerce website focusing on user authentication, product browsing, and favorites functionality.
@@ -12,7 +12,7 @@ The goal was to build a simplified e-commerce website focusing on user authentic
 
 ### Frontend
 - [x] Plain HTML, CSS, JS implemented
-- [x] Bootstrap/Tailwind CSS integration (to be confirmed)
+- [ ] Bootstrap/Tailwind CSS integration 
 
 ### User Authentication
 - [x] Registration functionality
