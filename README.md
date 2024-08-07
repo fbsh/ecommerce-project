@@ -59,3 +59,50 @@ The goal was to build a simplified e-commerce website focusing on user authentic
 - [ ] Implement unit tests
 - [ ] Implement integration tests
 
+## Setup Instructions
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/fbsh/ecommerce-project.git
+   cd ecommerce-project
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Set up environment variables:
+   Create a `.env` file in the root directory with the following content:
+   ```
+   PORT=3000
+   MONGODB_URI=mongodb://localhost:27017/ecommerce
+   JWT_SECRET=your_jwt_secret
+   ```
+   Replace `mongodb://localhost:27017/ecommerce` with your MongoDB connection string if different.
+
+4. Seed the database:
+   ```
+   npm run seed
+   ```
+   This will populate the database with 30 fake products across 5 brands and 3 product types.
+
+5. Start the development server:
+   ```
+   npm run dev
+   ```
+
+6. Access the application:
+   Open a web browser and navigate to `http://localhost:3000`
+
+## Available Scripts
+- `npm run dev`: Start the development server with hot-reloading
+- `npm start`: Start the production server
+- `npm run build`: Build the TypeScript files
+- `npm run seed`: Seed the database with fake data
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
